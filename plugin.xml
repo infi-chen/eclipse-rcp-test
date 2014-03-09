@@ -73,6 +73,10 @@
                   label="show Extensions"
                   style="push">
             </command>
+            <command
+                  commandId="ViewTest.AddSpirit"
+                  style="push">
+            </command>
             <separator
                   name="separator"
                   visible="true">
@@ -130,6 +134,11 @@
             keyConfigurationId="org.eclipse.ui.defaultAcceleratorConfiguration"
             keySequence="M1+B">
       </keyBinding>
+      <command
+            defaultHandler="viewtest.Handler.AddSpiritHandler"
+            id="ViewTest.AddSpirit"
+            name="AddSpirit">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
