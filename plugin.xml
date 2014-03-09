@@ -49,6 +49,12 @@
             name="ExtensionsView"
             restorable="true">
       </view>
+      <view
+            class="viewtest.CanvasView"
+            id="ViewTest.CanvasView"
+            name="CanvasView"
+            restorable="true">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.menus">
@@ -83,15 +89,21 @@
       <perspectiveExtension
             targetID="*">
          <view
-               id="ViewTest.HelloView"
+               id="ViewTest.CanvasView"
                minimized="false"
                relationship="left"
                relative="org.eclipse.ui.views.ResourceNavigator">
          </view>
          <view
+               id="ViewTest.HelloView"
+               minimized="false"
+               relationship="bottom"
+               relative="org.eclipse.ui.views.ResourceNavigator">
+         </view>
+         <view
                id="ViewTest.ExtensionsView"
                minimized="false"
-               relationship="right"
+               relationship="bottom"
                relative="org.eclipse.ui.views.ResourceNavigator">
          </view>
       </perspectiveExtension>
